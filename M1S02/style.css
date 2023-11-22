@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(212, 212, 212);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
