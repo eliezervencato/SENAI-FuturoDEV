@@ -1,0 +1,99 @@
+/* GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 95vw;
+    height: 95vh;
+}
+
+
+/* CONTAINER INPUT */
+.container__input {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    width: 400px;
+}
+
+.container__input.open {
+    display: none;
+}
+
+.input__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-data{
+    width: 150px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* CONTAINER RESPOSTA */
+.container__resposta {
+    display: none;
+}
+
+.container__resposta.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#resposta {
+    font-size: 1rem;
+}
+
+
+/* BOTOES */
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: fit-content;
+    align-self: center;
+    background-color: rgb(74, 74, 199);
+    color: white;
+}

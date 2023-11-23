@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido de Férias</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container flex-center">
+      <section class="container__input flex-center">
+        <div class="input">
+          <label for="nome">Nome do Funcionário</label>
+          <input type="text" id="nome" placeholder="Insira o nome" />
+        </div>
+
+          <div class="input__data">
+            <div class="input">
+              <label for="inicio">Data de início</label>
+              <input type="text" id="inicio" class="input-data" placeholder="dd/mm/yyyy"/>
+            </div>
+            <div class="input">
+              <label for="termino">Data de término</label>
+              <input type="text" id="termino" class="input-data" placeholder="dd/mm/yyyy" />
+            </div>
+          </div>    
+        
+        <button onclick="gerar()">Gerar carta</button>
+      </section>
+
+      <section class="container__resposta">
+        <p id="resposta"></p>
+
+        <button onclick="gerar()">Gerar outra carta</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
