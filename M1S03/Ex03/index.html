@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de FGTS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__input">
+        <h1>Cálculo de FGTS</h1>
+
+        <input type="number" id="inp-1" placeholder="Salário Bruto" />
+
+        <button class="btn-color-1" onclick="calcular()">Calcular</button>
+      </div>
+
+      <div class="container__resposta">
+        <h1>Resultado</h1>
+        <p id="resposta"></p>
+        <p id="resposta2"></p>
+
+        <button class="btn-color-2" onclick="calcular()">
+          Calcular novamente
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
