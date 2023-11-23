@@ -6,6 +6,34 @@
     <title>To Do List</title>
 </head>
 <body>
+    <div class="container">
+        <div class="title">
+            <h1 class="title__h1">Lista de Tarefas</h1>
+        </div>
+        
+        <div class="input">
+            <input type="text" id="novaTarefa" class="input__tarefa" placeholder="Digite uma tarefa..." />
+            <button id="btnAdd" onclick="addTarefa()">Adicionar</button>
+        </div>
 
+        <div class="lista">
+            <ul>
+                <li class="lista__item">
+                    <input type="checkbox" id="itemCheckbox">
+                    <span class="item--tarefa">HTML & CSS</span>
+                    <button class="item--excluir">X</button>
+                </li>
+                <li class="lista__item">
+                    <input type="checkbox" id="itemCheckbox">
+                    <span class="item--tarefa">JavaScript</span>
+                    <button class="item--excluir">X</button>
+                </li>
+                <li class="lista__item">
+                    <input type="checkbox" id="itemCheckbox">
+                    <span class="item--tarefa">Git & GitHub</span>
+                    <button class="item--excluir">X</button>
+                </li>
+        </div>
+    </div>
 </body>
 </html>
