@@ -1,3 +1,5 @@
+/* GERAL */
+
 body {
     background-color: rgb(212, 212, 212);
 }
@@ -10,7 +12,11 @@ button {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+
+/* SEÇÃO FOTOS */
 
 .img__container {
     display: flex;
@@ -30,4 +36,18 @@ img {
     height: 250px;
     padding: 10px;
     outline: solid 1px rgb(141, 141, 141);
+}
+
+
+/* SEÇÃO PROFISSIONAL */
+
+.lista__container {
+    list-style: none;
+}
+
+.btn-color-1 {
+    background-color: blue;
+    border: blue;
+    box-shadow: 2px 2px gray;
+    color: white;
 }
