@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,82 @@
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-li {
-    list-style: none;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 0 1 700px;
+    margin: 5vh 1vh;
+}
+
+.title {
+    text-align: center;
+    cursor: default;
+}
+
+.title__h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.input__tarefa {
+    font-size: 1.2rem;
+    flex: 1 1 400px;
+    padding: 4px 10px;
+    border: solid 1px gray;
+    border-radius: 7px;
+}
+
+.input__tarefa:focus {
+    outline: solid 1px gray;
+}
+
+#btnAdd {
+    flex: 1 1;
+    background-color: rgb(216, 218, 215);
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.76);
+    border: solid 1px gray;
+    border-radius: 7px; 
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.lista__item {
+    display: flex;
+    gap: 1em;
     margin: 10px 0;
+    list-style: none;
+}
+
+#itemCheckbox {
+    width: 28px;
+    height: 31px;
+}
+
+.item--excluir{
+    width: fit-content;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    text-align: center;
+}
+
+
+.item--tarefa {
+    flex: 1 0;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
 }
