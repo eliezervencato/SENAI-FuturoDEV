@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite de Casamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container flex-center">
+      <section class="container__input flex-center">
+        <div class="input">
+          <label for="noivo">Nome do Noivo</label>
+          <input type="text" id="noivo" placeholder="Insira o nome do noivo" />
+        </div>
+        <div class="input">
+          <label for="noiva">Nome da Noiva</label>
+          <input type="text" id="noiva" placeholder="Insira o nome da noiva" />
+        </div>
+        <div class="input">
+          <label for="convidado">Nome do Convidado</label>
+          <input type="text" id="convidado" placeholder="Insira o nome do convidado" />
+        </div>
+
+          <div class="input__data">
+            <div class="input">
+              <label for="inicio">Data do casamento</label>
+              <input type="text" id="data" class="input-data" placeholder="dd/mm/yyyy"/>
+            </div>
+            <div class="input">
+              <label for="termino">Horário de início</label>
+              <input type="text" id="horario" class="input-data" placeholder="19:00" />
+            </div>
+          </div>    
+        
+        <button onclick="gerar()">Gerar convite</button>
+      </section>
+
+      <section class="container__resposta flex-center">
+        <p id="resposta"></p>
+
+        <button onclick="gerar()">Gerar outro convite</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
