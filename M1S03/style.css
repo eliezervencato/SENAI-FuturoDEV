@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .container, .container__input, .container__resposta.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 95vw;
+    height: 90vh;
+}
+
+.container__input {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.container__input.open {
+    display: none;
+}
+
+.container__resposta {
+    display: none;
+}
+
+.container__resposta.open {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.material-symbols-outlined {
+    font-size: 5rem;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-color-1 {
+    background-color: rgb(74, 74, 199);
+    color: white;
+}
+.btn-color-2 {
+    background-color: rgb(118, 118, 145);
+    color: white;
+}
