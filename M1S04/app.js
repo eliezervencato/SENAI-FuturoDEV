@@ -4,6 +4,20 @@ const lista = document.getElementById('lista');
 
 let listaControle = [];
 
+
+function removerItem(itemRemover) {
+    const confirmar = confirm('Tem certeza que deseja excluir?');
+
+    if(confirmar){
+        const novaListaControle = listaControle.filter((itemLista) => {
+            return itemLista != itemRemover;
+        });
+    
+        listaControle = novaListaControle;
+        atualizaTela();
+    }
+}
+
 function criaElementoItem(item){
     const novoElemento = document.createElement('li');
     const status = item.status ? 'checked' : '';
