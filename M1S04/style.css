@@ -20,23 +20,20 @@ body {
     margin: 5vh 1vh;
 }
 
-.title {
+h1 {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
     cursor: default;
 }
 
-.title__h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-}
-
-.input {
+.formulario {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-.input__tarefa {
+#tarefa {
     font-size: 1.2rem;
     flex: 1 1 400px;
     padding: 4px 10px;
@@ -44,7 +41,7 @@ body {
     border-radius: 7px;
 }
 
-.input__tarefa:focus {
+#tarefa:focus {
     outline: solid 1px gray;
 }
 
@@ -58,31 +55,36 @@ body {
     cursor: pointer;
 }
 
-.lista__item {
+#lista {
     display: flex;
+    flex-direction: column;
     gap: 1em;
-    margin: 10px 0;
     list-style: none;
 }
 
-#itemCheckbox {
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: default;
+}
+
+.checkbox {
     width: 28px;
     height: 31px;
 }
 
-.item--excluir{
+.checkbox:checked + span {
+    text-decoration: line-through;
+}
+
+.excluir{
     width: fit-content;
     padding: 0;
 }
 
 .material-symbols-outlined {
     text-align: center;
-}
-
-
-.item--tarefa {
-    flex: 1 0;
-    font-size: 1.2rem;
-    text-align: center;
-    cursor: pointer;
 }
