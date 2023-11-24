@@ -94,3 +94,22 @@ h1 {
 .material-symbols-outlined {
     text-align: center;
 }
+
+.contagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.4rem;
+    color: rgb(0, 22, 15);
+}
+
+#contador {
+    font-weight: bold;
+    border: solid 1px gray;
+    border-radius: 50%;
+    padding: 4px;
+    width: 36px;
+    height: fit-content;
+    text-align: center;
+}

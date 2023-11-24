@@ -43,11 +43,14 @@ function criaElementoItem(item){
 
 function atualizaTela(){
     lista.innerHTML = '';
-
+    let contagem = 0;
     listaControle.forEach((item) => {
         const novoItem = criaElementoItem(item);
-        lista.appendChild(novoItem);        
+        lista.appendChild(novoItem);
+        contagem++;        
 });
+    const contador = document.getElementById('contador');
+    contador.innerHTML = contagem;
 }
 
 atualizaTela();
