@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: rgb(139, 177, 164);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,6 +22,7 @@ body {
 }
 
 h1 {
+    color: rgb(0, 22, 15);
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -66,9 +68,13 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.2rem;
     text-align: center;
     cursor: default;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .checkbox {
